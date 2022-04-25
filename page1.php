@@ -11,7 +11,7 @@
 
     <h1>Ok comme avant!</h1>
 
-    <img src="./asset/img/php.jpg" alt="">
-    <script src="./asset/js/script.js"></script>
+    <img src="asset/img/php.jpg" alt="">
+    <script src="asset/js/script.js"></script>
 </body>
 </html>
