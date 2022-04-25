@@ -27,24 +27,40 @@
 // echo "<br>";
 // echo $z= $z -4;;
 
-echo "<br>";
+// echo "<br>";
 
-$nb = 5; 
+// $nb = 5; 
 
-$nb+=10; //15
+// $nb+=10; //15
 
-// $nb = $nb + 10 ;
+// // $nb = $nb + 10 ;
 
-$nb+=15; // 30
+// $nb+=15; // 30
 
-// echo $nb;
+// // echo $nb;
 
-$text= "Ceci est un texte ";
+// $text= "Ceci est un texte ";
 
-$mot = "gros mot";
+// $mot = "gros mot";
 
-$text ." ". $mot;
+// $text ." ". $mot;
 
-$text.=$mot;
+// $text.=$mot;
 
-echo $text;
+// echo $text;
+
+// echo $prout;
+// $prout = "pet";
+
+
+
+// $userName = "Jean-Eudes";
+// $a = 4;
+// $b = 3;
+// $c = "</br>";
+
+// echo "Salam, je m'appelle ".$userName."!".$c."J'ai ".$b.$a." ans !".$c."J'habite au ".$b."7 boulevard National";
+
+
+
+
