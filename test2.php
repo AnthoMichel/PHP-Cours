@@ -5,10 +5,12 @@
 <body>
 
 <h1>
-    Bienvenue sur l'accueil
+    Bienvenue sur la Page 2
 </h1>
 
-<a href="test2.php">Page 2</a>
+<a href="test.php">
+    Accueil
+</a>
 
 </body>
 
