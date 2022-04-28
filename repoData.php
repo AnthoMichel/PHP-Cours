@@ -8,3 +8,12 @@ $valo = [
     "category"=> "FPS",
     "nb_players"=> 10,
 ];
+
+
+$games = [
+    "Tarkov",
+    "Lemnis Gate",
+    "Tenet",
+    "Inception",
+    "COD"
+];
