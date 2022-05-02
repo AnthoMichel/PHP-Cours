@@ -15,5 +15,6 @@ $games = [
     "Lemnis Gate",
     "Tenet",
     "Inception",
-    "COD"
+    "COD",
+    "Lundi Matin"
 ];
