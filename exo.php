@@ -149,17 +149,17 @@ $test="000";
 //     case 3:
 //         echo "i égal 3";
 // }
-$i = 2;
-switch ($i ) {
-    case 3:
-        echo "c'est 5";
-        break;
-    case 10:
-        echo "c'est 10";
-        break;
-    case 8:
-        echo "c'est 8";
-        break;
-    default:
-       echo "i n'est ni égal à 2, ni à 1, ni à 0.";
-}
+// $i = 2;
+// switch ($i ) {
+//     case 3:
+//         echo "c'est 5";
+//         break;
+//     case 10:
+//         echo "c'est 10";
+//         break;
+//     case 8:
+//         echo "c'est 8";
+//         break;
+//     default:
+//        echo "i n'est ni égal à 2, ni à 1, ni à 0.";
+// }
