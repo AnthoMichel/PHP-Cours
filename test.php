@@ -1,4 +1,16 @@
-<?php  require_once "repoData.php" ?>
+<?php  require_once "repoData.php";
+
+$dbh = new PDO('mysql:host=localhost;dbname=jeux_projet', "root","");
+
+$req  = $dbh->prepare("SELECT * FROM jeux");
+$req->execute();
+$myGames = $req->fetchAll(PDO::FETCH_ASSOC);
+$req->closeCursor();
+
+var_dump($myGames);
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +28,7 @@
 <h1 class="p-4 my-5 bg-dark text-danger text-center"> Bienvenue sur STEAM</h1>
 
 
-    <?php foreach ($games as $game ): ?>
+    <?php foreach ($myGames as $game ): ?>
 
         <?php require "card.php" ?>
 
