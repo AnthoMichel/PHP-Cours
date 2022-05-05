@@ -7,7 +7,75 @@ $req->execute();
 $myGames = $req->fetchAll(PDO::FETCH_ASSOC);
 $req->closeCursor();
 
-var_dump($myGames);
+
+
+
+// $tabs= [11,5,8,9,22,20,19,77,85,87,6];
+
+// $reponse = [];
+
+
+// foreach ($tabs as $number) {
+   
+
+//     if($number >= 20){
+//         echo "  - ".  $number;
+//         $reponse[] = $number;
+     
+//     }
+
+// }
+// echo '<br>';
+// echo implode(", " , $reponse) . " il y a " . count($reponse) . " chiffre(s) au dessus de 20";
+
+// var_dump($reponse);
+
+//----------------------------------------------------------------------------------
+
+$users= [
+
+    ["name" => "Flo", "lunettes" => 0],
+    ["name" => "Michel", "lunettes" => 1],
+    ["name" => "Laurent", "lunettes" => 2],
+    ["name" => "Manu", "lunettes" => 0]
+
+];
+// var_dump( $users);
+
+// $users[0]['note']= 250;
+
+// foreach ($users as $user ) {
+
+//     // var_dump($user) ;
+//     var_dump($user["name"]) ;
+//     // $value["note"]=5;
+//     // $user["note"]=5;
+//     // if(isset($value['note'])){
+//     //     $value=5;
+//     // }
+//     // echo array_push($value['note'] , 5);
+//     // $user["note"]= 5;
+
+// }
+function randomGlass($array){
+    for ($i=0; $i < count($array) ; $i++) { 
+        
+        $array[$i]['lunettes']= mt_rand(0,1) ;
+    
+        // for ($j=0; $j < count( $users[$i] ) ; $j++) { 
+        // }
+    }
+    return $array;
+}
+
+
+$usersRandomized = randomGlass($users) ;
+
+echo "<hr>";
+var_dump($usersRandomized);
+
+
+
 ?>
 
 
@@ -34,7 +102,7 @@ var_dump($myGames);
 
     <?php endforeach; ?>
 
-    <?php var_dump($game) ?>
+   
     <ul>
         <?php  for ($i=0; $i < 4 ; $i++) :?>
     
@@ -42,6 +110,12 @@ var_dump($myGames);
     
         <?php endfor; ?>   
 
+
+        <?php 
+
+        $random=  mt_rand(1,99) ;   $genre =  mt_rand(0,1) ? "men" : "women";  ?>
+
+        <img src="https://randomuser.me/api/portraits/<?= $genre ?>/<?= $random ?>.jpg" >
     </ul>
 </main>
     
