@@ -25,6 +25,9 @@ $req->closeCursor(); // coupe la connection avec la bdd
 // CREATE --> page -> formulaire -> verif et push dans la BDD / redirection vers READ
 // UPDATE --> page list (read) --> page edition tu change --> verif et push dans la BDD / redirection vers READ
 // DELETE --> page list (read) --> button click balance un delete !
+
+
+
 ?>
 
 
@@ -43,6 +46,10 @@ $req->closeCursor(); // coupe la connection avec la bdd
 <body>
 
     <main class="container">
+
+        <a href="single.item.php?id=1&firstname=Michel">Produit 1</a>
+        
+        <a href="single.item.php?id=2&firstname=Patrick">Produit 2</a>
 
         <h1 class="p-4 my-5 bg-dark text-danger text-center"> Bienvenue sur STEAM</h1>
 
