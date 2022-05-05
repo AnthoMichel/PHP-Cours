@@ -47,29 +47,28 @@ $req->closeCursor(); // coupe la connection avec la bdd
         <h1 class="p-4 my-5 bg-dark text-danger text-center"> Bienvenue sur STEAM</h1>
 
 
-        <ul>
-            <?php foreach ($myGames as $game) {
-                echo "<li>" . $game['nom'] . "</li>";
-            }
+        <table class="table table-hover text-center">
+            <thead class="bg-info">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Possesseur</th>
+                    <th scope="col">Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($myGames as $game) : ?>
+                    <tr class="table">
+                        <td> <?= $game['ID'] ?></td>
+                        <td> <?= $game['nom'] ?></td>
+                        <td> <?= $game['possesseur'] ?></td>
+                        <td> <?= $game['prix'] ?> &euro;</td>
 
-            ?>
-        </ul>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
 
-        <ul>
-            <?php for ($i = 0; $i < 4; $i++) : ?>
-
-                <li>Cool ! <?= $i ?></li>
-
-            <?php endfor; ?>
-
-
-            <?php
-
-            $random =  mt_rand(1, 99);
-            $genre =  mt_rand(0, 1) ? "men" : "women";  ?>
-
-            <img src="https://randomuser.me/api/portraits/<?= $genre ?>/<?= $random ?>.jpg">
-        </ul>
     </main>
 
 </body>
