@@ -1,10 +1,10 @@
 <?php
 
-var_dump($_GET);
+var_dump($_POST);
 
-if (!empty($_GET)) {
-    $plane = $_GET["avion"];
-    $price = $_GET["price"];
+if (!empty($_POST)) {
+    $plane = $_POST["avion"];
+    $price = $_POST["price"];
 
 
     if ( gettype(intval($price)) === "integer" ) {

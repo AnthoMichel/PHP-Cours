@@ -1,4 +1,4 @@
-<form action="cible.php" method="get">
+<form action="cible.php" method="POST">
 
     <label for="">Avion</label>
     <input type="text" name="avion">
