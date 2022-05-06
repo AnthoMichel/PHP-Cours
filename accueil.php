@@ -16,13 +16,16 @@
 
         <h1 class="p-4 my-5 bg-dark text-danger text-center">Formulaire</h1>
 
-        <form method="post" class="form-group">
+        <form action="control.php" method="post" class="form-group">
 
             <label for="nom">Le nom de votre chat</label>
+            
             <input class="form-control" type="text" name="nom" id="nom">
 
             <label for="nom">L'age de votre chat</label>
             <input  class="form-control" type="text" name="age" id="age">
+
+            <input type="range" name="lvl">
 
             <button class="btn btn-info shadow my-2"  type="submit">
                 Envoyer
@@ -30,10 +33,12 @@
 
         </form>
         
-        <?php if( !empty($_POST['nom']) && !empty($_POST['age'])): ?>
+        <?php if( !empty($_POST['nom']) && !empty($_POST['age'])): var_dump($_POST) ?>
         
-            <p>Nom: <?= $_POST['nom'] ?> </p>
+
+            <p>Nom: <?=  $_POST['nom'] ?> </p>
             <p> <?= $_POST['age'] ?> ans </p>
+            <p>Level: <?= $_POST['lvl'] ?> /100 </p>
         
         <?php endif; ?>
 
